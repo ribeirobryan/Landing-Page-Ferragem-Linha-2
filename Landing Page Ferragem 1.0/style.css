@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Roboto-condensed";
+    src: url('Roboto_Condensed/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url('Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.main-title{
+    margin-left:20vw;
+    height: 93vh;
+}
+.cont-div{
+    display: flex;
+    position: relative;
+    top: 30vh;
+    flex-direction: column;
+    
+}
+.main-fl2{
+    width: 600px;
+    height: auto;
+}
+.main-slogan{
+    color: white;
+    font-family: "Roboto-condensed", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+.main-btn{
+    display:flex;
+    align-items: center;
+}
+.main-button-whats{
+    font-family: "Roboto-bold", Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border: 2px solid #fd0;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3em;
+    margin: 5px;
+}
+.main-button-whats:hover{
+    background-color: rgba(255, 221, 0, 0.4);
+    transition-duration: 400ms;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #fd0;
+    
+}
+.main-button-insta{
+    font-family: "Roboto-bold", Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border: 2px solid #fd0;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3em;
+    margin: 5px;
+}
+.main-button-insta:hover{
+    background-color: rgba(255, 221, 0, 0.4);
+    transition-duration: 400ms;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #fd0;
+    
+}
+.main-button-comochegar{
+    font-family: "Roboto-bold", Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border: 2px solid #fd0;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3em;
+    margin: 5px;
+}
+.main-button-comochegar:hover{
+    background-color: rgba(255, 221, 0, 0.4);
+    transition-duration: 400ms;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #fd0;
+}
+.second-bg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 95vh;
+}
+.bottom-black{
+    background-color: black;
+    height: 7vh;
+    width: 100vw;
+    border-top: 1px solid #fd0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottom-black img{
+    height: 5vh;
+}
+@media(max-width: 1300px){
+    .second-bg{
+        right: -60px;
+        opacity: 0.8;
+        transition-duration: 1000ms;
+    }
+}
+@media (max-width: 900px) {
+    .second-bg{
+        opacity: 0.6    ;
+        right: -120px;
+    }
+    .main-title{
+        height: 95vh;
+    }
+    .bottom-black{
+        height: 5vh;
+    }
+    .bottom-black img{
+        height: 3vh;
+    }
+}
+@media (max-width: 780px) {
+    .main-title{
+        margin-left:0px;
+        align-self: center;
+        transition-duration: 500ms;
+    }
+}
+@media (max-width: 700px) {
+    .second-bg{
+        opacity: 0.5;
+        transition: 1000ms;
+        right: -160px;
+    }
+}
+@media (max-width: 625px) {
+    *{
+        transition-duration: 1s;
+    }
+    .cont-div{
+        top: 20vh;
+    }
+    .main-fl2{
+        width: 85vw;
+        align-self: center;
+    }
+    .main-slogan{
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 1px black;
+        transition: 500ms;
+        text-align: center;
+        align-self: center;
+    }
+    .main-btn{
+        align-self: center;
+    }
+    .main-title{
+        height: 100vh;
+    }
+    .bottom-black{
+        height: 0vh;
+        border: none;
+    }
+    .bottom-black img{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .second-bg{
+        opacity: 0.3;
+        transition: 1000ms;
+        right: -200px;
+    }
+}
+@media (max-width: 400px) {
+    .second-bg{
+        opacity: 0.2;
+        transition: 1000ms;
+        right: -240px;
+    }
+    .main-btn{
+        flex-direction: column;
+        align-items: center;
+        transition: 500ms;
+    }
+}
+
